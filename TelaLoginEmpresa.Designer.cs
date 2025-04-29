@@ -51,7 +51,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ButtonShadow;
-            label2.Location = new Point(130, 141);
+            label2.Location = new Point(135, 141);
             label2.Name = "label2";
             label2.Size = new Size(39, 15);
             label2.TabIndex = 1;
@@ -77,7 +77,7 @@
             pictureBox1.Image = Properties.Resources.grafico_login;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(559, 261);
+            pictureBox1.Size = new Size(568, 273);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -86,7 +86,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(559, 261);
+            ClientSize = new Size(568, 273);
             Controls.Add(txtSenhaEmpresa);
             Controls.Add(txtLoginEmpresa);
             Controls.Add(label2);
