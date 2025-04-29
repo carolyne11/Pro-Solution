@@ -1,0 +1,40 @@
+﻿using Microsoft.Win32.SafeHandles;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Pro_Solution
+{
+    public partial class TelaEmpresa : Form
+    {
+        private string connectionString;
+
+        public TelaEmpresa()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCarregar_Click(object sender, EventArgs e)
+        {
+            using (var conn = Conexao.obterConexao())
+            {
+
+                string sql = "SELECT perguntas.id, usuario.nome FROM perguntas JOIN usuario ON perguntas.usuario_id = usuario.nome;";
+                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, conn);
+                DataTable dt = new DataTable();
+                dataAdapter.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+        }
+        
+        
+        }
+    }
+

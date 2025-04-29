@@ -36,6 +36,7 @@
             btnCadastrese = new Button();
             btnEmpresaTela1 = new Button();
             pictureBox1 = new PictureBox();
+            btnMostarSenha = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,9 +46,9 @@
             label1.BackColor = SystemColors.ButtonShadow;
             label1.Location = new Point(230, 115);
             label1.Name = "label1";
-            label1.Size = new Size(37, 15);
+            label1.Size = new Size(41, 15);
             label1.TabIndex = 0;
-            label1.Text = "Login";
+            label1.Text = "E-mail";
             // 
             // label2
             // 
@@ -65,6 +66,7 @@
             txtLoginTela1.Name = "txtLoginTela1";
             txtLoginTela1.Size = new Size(203, 23);
             txtLoginTela1.TabIndex = 2;
+            txtLoginTela1.TextChanged += txtLoginTela1_TextChanged;
             // 
             // txtSenhaTela1
             // 
@@ -82,6 +84,7 @@
             btnEntrar.TabIndex = 4;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = false;
+            btnEntrar.Click += btnEntrar_Click;
             // 
             // btnCadastrese
             // 
@@ -111,16 +114,27 @@
             pictureBox1.Image = Properties.Resources.Mídia;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 450);
+            pictureBox1.Size = new Size(800, 448);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            // 
+            // btnMostarSenha
+            // 
+            btnMostarSenha.Location = new Point(621, 139);
+            btnMostarSenha.Name = "btnMostarSenha";
+            btnMostarSenha.Size = new Size(119, 23);
+            btnMostarSenha.TabIndex = 8;
+            btnMostarSenha.Text = "Mostrar Senha";
+            btnMostarSenha.UseVisualStyleBackColor = true;
+            btnMostarSenha.Click += btnMostarSenha_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 448);
+            Controls.Add(btnMostarSenha);
             Controls.Add(btnEmpresaTela1);
             Controls.Add(btnCadastrese);
             Controls.Add(btnEntrar);
@@ -146,5 +160,6 @@
         private Button btnCadastrese;
         private Button btnEmpresaTela1;
         private PictureBox pictureBox1;
+        private Button btnMostarSenha;
     }
 }
