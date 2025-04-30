@@ -141,10 +141,11 @@ namespace Pro_Solution
             string pergunta8 = cmbPergunta8.Text;
             string pergunta9 = cmbPergunta9.Text;
             string pergunta10 = cmbPergunta10.Text;
+            string emailpergunta = txtEmailPergunta.Text;
 
             using (var conn = Conexao.obterConexao())
             {
-                string sql = "INSERT INTO perguntas (pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,pergunta8,pergunta9,pergunta10) VALUES(@pergunta1,@pergunta2,@pergunta3,@pergunta4,@pergunta5,@pergunta6,@pergunta7,@pergunta8,@pergunta9,@pergunta10)";
+                string sql = "INSERT INTO perguntas (email,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,pergunta8,pergunta9,pergunta10) VALUES(@email,@pergunta1,@pergunta2,@pergunta3,@pergunta4,@pergunta5,@pergunta6,@pergunta7,@pergunta8,@pergunta9,@pergunta10)";
                 var cmd = new MySqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@pergunta1", pergunta1);
                 cmd.Parameters.AddWithValue("@pergunta2", pergunta2);
@@ -156,7 +157,7 @@ namespace Pro_Solution
                 cmd.Parameters.AddWithValue("@pergunta8", pergunta8);
                 cmd.Parameters.AddWithValue("@pergunta9", pergunta9);
                 cmd.Parameters.AddWithValue("@pergunta10", pergunta10);
-
+                cmd.Parameters.AddWithValue("@email", emailpergunta);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Enviado com sucesso");
             }

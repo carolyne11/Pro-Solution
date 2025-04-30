@@ -50,6 +50,8 @@
             cmbPergunta8 = new ComboBox();
             cmbPergunta9 = new ComboBox();
             cmbPergunta10 = new ComboBox();
+            txtEmailPergunta = new TextBox();
+            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             // 
             // btnEnviar
             // 
-            btnEnviar.Location = new Point(305, 614);
+            btnEnviar.Location = new Point(622, 614);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(104, 33);
             btnEnviar.TabIndex = 11;
@@ -78,7 +80,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(182, 106);
+            label1.Location = new Point(181, 110);
             label1.Name = "label1";
             label1.Size = new Size(386, 17);
             label1.TabIndex = 12;
@@ -88,7 +90,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(166, 161);
+            label2.Location = new Point(171, 167);
             label2.Name = "label2";
             label2.Size = new Size(456, 17);
             label2.TabIndex = 13;
@@ -98,7 +100,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(192, 215);
+            label3.Location = new Point(181, 222);
             label3.Name = "label3";
             label3.Size = new Size(376, 17);
             label3.TabIndex = 14;
@@ -108,7 +110,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(171, 261);
+            label4.Location = new Point(174, 283);
             label4.Name = "label4";
             label4.Size = new Size(407, 17);
             label4.TabIndex = 15;
@@ -118,7 +120,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(196, 311);
+            label5.Location = new Point(196, 344);
             label5.Name = "label5";
             label5.Size = new Size(333, 17);
             label5.TabIndex = 16;
@@ -128,7 +130,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(171, 358);
+            label6.Location = new Point(171, 390);
             label6.Name = "label6";
             label6.Size = new Size(370, 17);
             label6.TabIndex = 17;
@@ -138,7 +140,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(124, 405);
+            label7.Location = new Point(118, 436);
             label7.Name = "label7";
             label7.Size = new Size(509, 17);
             label7.TabIndex = 18;
@@ -148,7 +150,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(171, 458);
+            label8.Location = new Point(174, 482);
             label8.Name = "label8";
             label8.Size = new Size(379, 17);
             label8.TabIndex = 19;
@@ -158,7 +160,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(183, 511);
+            label9.Location = new Point(183, 528);
             label9.Name = "label9";
             label9.Size = new Size(358, 17);
             label9.TabIndex = 20;
@@ -168,7 +170,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(171, 565);
+            label10.Location = new Point(171, 587);
             label10.Name = "label10";
             label10.Size = new Size(382, 17);
             label10.TabIndex = 21;
@@ -177,7 +179,7 @@
             // cmbPergunta1
             // 
             cmbPergunta1.FormattingEnabled = true;
-            cmbPergunta1.Location = new Point(196, 126);
+            cmbPergunta1.Location = new Point(199, 130);
             cmbPergunta1.Name = "cmbPergunta1";
             cmbPergunta1.Size = new Size(330, 23);
             cmbPergunta1.TabIndex = 22;
@@ -186,7 +188,7 @@
             // cmbPergunta2
             // 
             cmbPergunta2.FormattingEnabled = true;
-            cmbPergunta2.Location = new Point(196, 185);
+            cmbPergunta2.Location = new Point(196, 187);
             cmbPergunta2.Name = "cmbPergunta2";
             cmbPergunta2.Size = new Size(330, 23);
             cmbPergunta2.TabIndex = 23;
@@ -195,7 +197,7 @@
             // cmbPergunta3
             // 
             cmbPergunta3.FormattingEnabled = true;
-            cmbPergunta3.Location = new Point(192, 235);
+            cmbPergunta3.Location = new Point(196, 242);
             cmbPergunta3.Name = "cmbPergunta3";
             cmbPergunta3.Size = new Size(330, 23);
             cmbPergunta3.TabIndex = 24;
@@ -204,7 +206,7 @@
             // cmbPergunta4
             // 
             cmbPergunta4.FormattingEnabled = true;
-            cmbPergunta4.Location = new Point(192, 281);
+            cmbPergunta4.Location = new Point(196, 303);
             cmbPergunta4.Name = "cmbPergunta4";
             cmbPergunta4.Size = new Size(330, 23);
             cmbPergunta4.TabIndex = 25;
@@ -213,7 +215,7 @@
             // cmbPergunta5
             // 
             cmbPergunta5.FormattingEnabled = true;
-            cmbPergunta5.Location = new Point(192, 331);
+            cmbPergunta5.Location = new Point(196, 364);
             cmbPergunta5.Name = "cmbPergunta5";
             cmbPergunta5.Size = new Size(330, 23);
             cmbPergunta5.TabIndex = 26;
@@ -222,7 +224,7 @@
             // cmbPergunta6
             // 
             cmbPergunta6.FormattingEnabled = true;
-            cmbPergunta6.Location = new Point(192, 378);
+            cmbPergunta6.Location = new Point(196, 410);
             cmbPergunta6.Name = "cmbPergunta6";
             cmbPergunta6.Size = new Size(330, 23);
             cmbPergunta6.TabIndex = 27;
@@ -231,7 +233,7 @@
             // cmbPergunta7
             // 
             cmbPergunta7.FormattingEnabled = true;
-            cmbPergunta7.Location = new Point(192, 425);
+            cmbPergunta7.Location = new Point(192, 456);
             cmbPergunta7.Name = "cmbPergunta7";
             cmbPergunta7.Size = new Size(330, 23);
             cmbPergunta7.TabIndex = 28;
@@ -240,7 +242,7 @@
             // cmbPergunta8
             // 
             cmbPergunta8.FormattingEnabled = true;
-            cmbPergunta8.Location = new Point(192, 478);
+            cmbPergunta8.Location = new Point(192, 502);
             cmbPergunta8.Name = "cmbPergunta8";
             cmbPergunta8.Size = new Size(330, 23);
             cmbPergunta8.TabIndex = 29;
@@ -249,7 +251,7 @@
             // cmbPergunta9
             // 
             cmbPergunta9.FormattingEnabled = true;
-            cmbPergunta9.Location = new Point(192, 531);
+            cmbPergunta9.Location = new Point(192, 548);
             cmbPergunta9.Name = "cmbPergunta9";
             cmbPergunta9.Size = new Size(330, 23);
             cmbPergunta9.TabIndex = 30;
@@ -258,17 +260,35 @@
             // cmbPergunta10
             // 
             cmbPergunta10.FormattingEnabled = true;
-            cmbPergunta10.Location = new Point(192, 585);
+            cmbPergunta10.Location = new Point(192, 614);
             cmbPergunta10.Name = "cmbPergunta10";
             cmbPergunta10.Size = new Size(330, 23);
             cmbPergunta10.TabIndex = 31;
             cmbPergunta10.SelectedIndexChanged += cmbPergunta10_SelectedIndexChanged;
+            // 
+            // txtEmailPergunta
+            // 
+            txtEmailPergunta.Location = new Point(231, 69);
+            txtEmailPergunta.Name = "txtEmailPergunta";
+            txtEmailPergunta.Size = new Size(295, 23);
+            txtEmailPergunta.TabIndex = 32;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(181, 72);
+            label11.Name = "label11";
+            label11.Size = new Size(36, 15);
+            label11.TabIndex = 33;
+            label11.Text = "email";
             // 
             // TelaPerguntas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(738, 659);
+            Controls.Add(label11);
+            Controls.Add(txtEmailPergunta);
             Controls.Add(cmbPergunta10);
             Controls.Add(cmbPergunta9);
             Controls.Add(cmbPergunta8);
@@ -323,5 +343,7 @@
         private ComboBox cmbPergunta8;
         private ComboBox cmbPergunta9;
         private ComboBox cmbPergunta10;
+        private TextBox txtEmailPergunta;
+        private Label label11;
     }
 }

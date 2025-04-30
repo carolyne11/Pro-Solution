@@ -26,7 +26,7 @@ namespace Pro_Solution
             using (var conn = Conexao.obterConexao())
             {
 
-                string sql = "SELECT perguntas.id, usuario.nome FROM perguntas JOIN usuario ON perguntas.usuario_id = usuario.nome;";
+                string sql = " SELECT * FROM perguntas";
                 MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, conn);
                 DataTable dt = new DataTable();
                 dataAdapter.Fill(dt);
