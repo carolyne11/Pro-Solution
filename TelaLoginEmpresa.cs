@@ -21,5 +21,33 @@ namespace Pro_Solution
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaLoginEmpresa_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoginEmpresa_Click(object sender, EventArgs e)
+        {
+            string login = txtLoginEmpresa.Text;
+            string senha = txtSenhaEmpresa.Text;
+
+            if (login == "Admin" && senha == "Admin123")
+            {
+                MessageBox.Show("Login Realizado com sucesso");
+                TelaEmpresa telaEmpresa = new TelaEmpresa();
+                telaEmpresa.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Login Incorreto");
+            }
+        }
     }
 }
