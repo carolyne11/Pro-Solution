@@ -57,14 +57,16 @@ namespace Pro_Solution
                 {
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Usuario cadastrado com sucesso");
-                    TelaLoginEmpresa telaLoginEmpresa = new TelaLoginEmpresa();
-                    telaLoginEmpresa.ShowDialog();
+                    Form1 form1 = new Form1();
+                    form1.ShowDialog();
+
                 }
                 catch (MySqlException ex)
                 {
                     if (ex.Number == 1062)
                     {
                         MessageBox.Show("Email ja cadastrado");
+                       
                     }
                     else
                     {
