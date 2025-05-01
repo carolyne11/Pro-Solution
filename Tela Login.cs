@@ -2,7 +2,7 @@ using MySql.Data.MySqlClient;
 
 namespace Pro_Solution
 {
-  
+
     public partial class Form1 : Form
 
     {
@@ -91,6 +91,12 @@ namespace Pro_Solution
                 btnMostarSenha.Text = "Esconder";
                 senhaVisivel = true;
             }
+        }
+
+        private void btnEsqueci_Click(object sender, EventArgs e)
+        {
+            FormRecuperarsenha formRecuperarsenha = new FormRecuperarsenha();
+            formRecuperarsenha.ShowDialog();
         }
     }
 }

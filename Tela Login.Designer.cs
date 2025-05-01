@@ -37,6 +37,7 @@
             btnEmpresaTela1 = new Button();
             pictureBox1 = new PictureBox();
             btnMostarSenha = new Button();
+            btnEsqueci = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -129,11 +130,22 @@
             btnMostarSenha.UseVisualStyleBackColor = true;
             btnMostarSenha.Click += btnMostarSenha_Click;
             // 
+            // btnEsqueci
+            // 
+            btnEsqueci.Location = new Point(621, 189);
+            btnEsqueci.Name = "btnEsqueci";
+            btnEsqueci.Size = new Size(119, 23);
+            btnEsqueci.TabIndex = 9;
+            btnEsqueci.Text = "Esqueci a senha";
+            btnEsqueci.UseVisualStyleBackColor = true;
+            btnEsqueci.Click += btnEsqueci_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 448);
+            Controls.Add(btnEsqueci);
             Controls.Add(btnMostarSenha);
             Controls.Add(btnEmpresaTela1);
             Controls.Add(btnCadastrese);
@@ -161,5 +173,6 @@
         private Button btnEmpresaTela1;
         private PictureBox pictureBox1;
         private Button btnMostarSenha;
+        private Button btnEsqueci;
     }
 }
