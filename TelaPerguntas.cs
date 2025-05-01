@@ -160,6 +160,8 @@ namespace Pro_Solution
                 cmd.Parameters.AddWithValue("@email", emailpergunta);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Enviado com sucesso");
+                TelaAgradecimento telaAgradecimento = new TelaAgradecimento();
+                telaAgradecimento.ShowDialog();
             }
         }
 

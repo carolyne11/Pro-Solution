@@ -1,6 +1,6 @@
 ﻿namespace Pro_Solution
 {
-    partial class TelaAgradecimento
+    partial class FormGrafico
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources._11;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(803, 571);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // TelaAgradecimento
+            // FormGrafico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(803, 571);
-            Controls.Add(pictureBox1);
-            Name = "TelaAgradecimento";
-            Text = "TelaAgradecimento";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ClientSize = new Size(800, 450);
+            Name = "FormGrafico";
+            Text = "FormGrafico";
+            Load += FormGrafico_Load;
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
     }
 }

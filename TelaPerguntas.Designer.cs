@@ -61,14 +61,14 @@
             pictureBox1.Image = Properties.Resources._1;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(738, 659);
+            pictureBox1.Size = new Size(792, 659);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // btnEnviar
             // 
-            btnEnviar.Location = new Point(622, 614);
+            btnEnviar.Location = new Point(646, 604);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(104, 33);
             btnEnviar.TabIndex = 11;
@@ -286,7 +286,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(738, 659);
+            ClientSize = new Size(792, 659);
             Controls.Add(label11);
             Controls.Add(txtEmailPergunta);
             Controls.Add(cmbPergunta10);
