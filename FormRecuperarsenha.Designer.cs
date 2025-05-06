@@ -93,12 +93,13 @@
             btnConfirmar.TabIndex = 6;
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.UseVisualStyleBackColor = true;
+            btnConfirmar.Click += btnConfirmar_Click;
             // 
             // FormRecuperarsenha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(739, 400);
             Controls.Add(btnConfirmar);
             Controls.Add(txtConfirmeSenha);
             Controls.Add(txtNovaSenha);
