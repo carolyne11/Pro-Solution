@@ -45,9 +45,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonShadow;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(230, 115);
             label1.Name = "label1";
-            label1.Size = new Size(41, 15);
+            label1.Size = new Size(47, 17);
             label1.TabIndex = 0;
             label1.Text = "E-mail";
             // 
@@ -55,9 +56,10 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ButtonShadow;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(230, 168);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(45, 17);
             label2.TabIndex = 1;
             label2.Text = "Senha";
             // 
@@ -79,6 +81,7 @@
             // btnEntrar
             // 
             btnEntrar.BackColor = SystemColors.ButtonShadow;
+            btnEntrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEntrar.Location = new Point(513, 139);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(75, 23);
@@ -90,6 +93,7 @@
             // btnCadastrese
             // 
             btnCadastrese.BackColor = SystemColors.ButtonShadow;
+            btnCadastrese.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCadastrese.Location = new Point(36, 56);
             btnCadastrese.Name = "btnCadastrese";
             btnCadastrese.Size = new Size(91, 23);
@@ -101,7 +105,8 @@
             // btnEmpresaTela1
             // 
             btnEmpresaTela1.BackColor = SystemColors.ButtonShadow;
-            btnEmpresaTela1.Location = new Point(690, 56);
+            btnEmpresaTela1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEmpresaTela1.Location = new Point(688, 56);
             btnEmpresaTela1.Name = "btnEmpresaTela1";
             btnEmpresaTela1.Size = new Size(75, 23);
             btnEmpresaTela1.TabIndex = 6;
@@ -122,6 +127,7 @@
             // 
             // btnMostarSenha
             // 
+            btnMostarSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMostarSenha.Location = new Point(621, 112);
             btnMostarSenha.Name = "btnMostarSenha";
             btnMostarSenha.Size = new Size(119, 23);
@@ -132,6 +138,7 @@
             // 
             // btnEsqueci
             // 
+            btnEsqueci.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnEsqueci.Location = new Point(621, 160);
             btnEsqueci.Name = "btnEsqueci";
             btnEsqueci.Size = new Size(119, 23);

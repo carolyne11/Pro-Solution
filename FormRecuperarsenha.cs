@@ -15,6 +15,7 @@ namespace Pro_Solution
     public partial class FormRecuperarsenha : Form
     {
         private string connectionString = "server=localhost;user=root;password=senacJBQ;database=trabalho;port=3307";
+        private bool senhaVisivel = false;
 
         public FormRecuperarsenha()
         {
@@ -25,6 +26,7 @@ namespace Pro_Solution
         {
             string email = txtEmailRecuperation.Text;
             string newPassword = txtNovaSenha.Text;
+            string senhaHash = Criptografia.GerarHash(newPassword);
 
             if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(newPassword))
             {
@@ -44,7 +46,7 @@ namespace Pro_Solution
                     conn.Open();
                     string query = "UPDATE usuario SET senha = @senha WHERE email = @email";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@senha", newPassword); // Considere usar hash para a senha
+                    cmd.Parameters.AddWithValue("@senha", newPassword); 
                     cmd.Parameters.AddWithValue("@email", email);
 
                     int rowsAffected = cmd.ExecuteNonQuery();

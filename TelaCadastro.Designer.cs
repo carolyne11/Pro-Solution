@@ -51,9 +51,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Gainsboro;
-            label1.Location = new Point(209, 112);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(215, 110);
             label1.Name = "label1";
-            label1.Size = new Size(40, 15);
+            label1.Size = new Size(45, 17);
             label1.TabIndex = 0;
             label1.Text = "Nome";
             // 
@@ -61,9 +62,10 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Gainsboro;
-            label2.Location = new Point(196, 164);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(209, 162);
             label2.Name = "label2";
-            label2.Size = new Size(57, 15);
+            label2.Size = new Size(66, 17);
             label2.TabIndex = 1;
             label2.Text = "Matricula";
             // 
@@ -71,9 +73,10 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Gainsboro;
-            label3.Location = new Point(215, 270);
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(220, 268);
             label3.Name = "label3";
-            label3.Size = new Size(34, 15);
+            label3.Size = new Size(40, 17);
             label3.TabIndex = 2;
             label3.Text = "Setor";
             // 
@@ -81,9 +84,10 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Gainsboro;
-            label5.Location = new Point(214, 318);
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(215, 316);
             label5.Name = "label5";
-            label5.Size = new Size(39, 15);
+            label5.Size = new Size(45, 17);
             label5.TabIndex = 4;
             label5.Text = "Senha";
             // 
@@ -141,9 +145,10 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.Gainsboro;
-            label4.Location = new Point(210, 218);
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(215, 216);
             label4.Name = "label4";
-            label4.Size = new Size(41, 15);
+            label4.Size = new Size(47, 17);
             label4.TabIndex = 11;
             label4.Text = "E-mail";
             // 
@@ -164,9 +169,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(185, 363);
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(174, 361);
             label6.Name = "label6";
-            label6.Size = new Size(96, 15);
+            label6.Size = new Size(111, 17);
             label6.TabIndex = 14;
             label6.Text = "Confirmar Senha";
             // 

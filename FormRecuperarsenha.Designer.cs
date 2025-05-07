@@ -40,18 +40,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(208, 207);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(222, 205);
             label1.Name = "label1";
-            label1.Size = new Size(36, 15);
+            label1.Size = new Size(42, 17);
             label1.TabIndex = 0;
             label1.Text = "Email";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(190, 267);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(194, 265);
             label2.Name = "label2";
-            label2.Size = new Size(69, 15);
+            label2.Size = new Size(80, 17);
             label2.TabIndex = 1;
             label2.Text = "Nova senha";
             // 
@@ -71,6 +73,7 @@
             // 
             // btnConfirmar
             // 
+            btnConfirmar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConfirmar.Location = new Point(338, 299);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(105, 31);

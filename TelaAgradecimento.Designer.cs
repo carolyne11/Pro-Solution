@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
+            btnSairColab = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,11 +43,22 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // btnSairColab
+            // 
+            btnSairColab.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSairColab.Location = new Point(679, 498);
+            btnSairColab.Name = "btnSairColab";
+            btnSairColab.Size = new Size(92, 41);
+            btnSairColab.TabIndex = 1;
+            btnSairColab.Text = "Sair";
+            btnSairColab.UseVisualStyleBackColor = true;
+            // 
             // TelaAgradecimento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(803, 571);
+            Controls.Add(btnSairColab);
             Controls.Add(pictureBox1);
             Name = "TelaAgradecimento";
             Text = "TelaAgradecimento";
@@ -57,5 +69,6 @@
         #endregion
 
         private PictureBox pictureBox1;
+        private Button btnSairColab;
     }
 }

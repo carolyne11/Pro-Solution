@@ -49,37 +49,37 @@
             // textBox1
             // 
             textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(12, 115);
+            textBox1.Location = new Point(280, 113);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(80, 27);
+            textBox1.Size = new Size(258, 27);
             textBox1.TabIndex = 1;
-            textBox1.Text = "GRÁFICO";
+            textBox1.Text = "GRÁFICO DE RESPOSTA POR ÁREA";
             // 
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(10, 238);
+            textBox2.Location = new Point(317, 255);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(82, 27);
+            textBox2.Size = new Size(168, 27);
             textBox2.TabIndex = 2;
-            textBox2.Text = "DADOS ";
+            textBox2.Text = " DADOS DE RESPOSTA";
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(135, 119);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(359, 156);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(96, 45);
             button1.TabIndex = 3;
             button1.Text = "ACESSAR";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(135, 242);
+            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(359, 325);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(96, 43);
             button2.TabIndex = 4;
             button2.Text = "ACESSAR";
             button2.UseVisualStyleBackColor = true;
