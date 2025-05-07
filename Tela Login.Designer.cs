@@ -122,7 +122,7 @@
             // 
             // btnMostarSenha
             // 
-            btnMostarSenha.Location = new Point(621, 139);
+            btnMostarSenha.Location = new Point(621, 112);
             btnMostarSenha.Name = "btnMostarSenha";
             btnMostarSenha.Size = new Size(119, 23);
             btnMostarSenha.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             // btnEsqueci
             // 
-            btnEsqueci.Location = new Point(621, 189);
+            btnEsqueci.Location = new Point(621, 160);
             btnEsqueci.Name = "btnEsqueci";
             btnEsqueci.Size = new Size(119, 23);
             btnEsqueci.TabIndex = 9;

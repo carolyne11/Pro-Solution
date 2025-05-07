@@ -30,17 +30,17 @@
         {
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             txtEmailRecuperation = new TextBox();
             txtNovaSenha = new TextBox();
-            txtConfirmeSenha = new TextBox();
             btnConfirmar = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(268, 93);
+            label1.Location = new Point(208, 207);
             label1.Name = "label1";
             label1.Size = new Size(36, 15);
             label1.TabIndex = 0;
@@ -49,45 +49,29 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(235, 137);
+            label2.Location = new Point(190, 267);
             label2.Name = "label2";
             label2.Size = new Size(69, 15);
             label2.TabIndex = 1;
             label2.Text = "Nova senha";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(175, 179);
-            label3.Name = "label3";
-            label3.Size = new Size(129, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Confirme a nova senha";
-            // 
             // txtEmailRecuperation
             // 
-            txtEmailRecuperation.Location = new Point(334, 90);
+            txtEmailRecuperation.Location = new Point(294, 199);
             txtEmailRecuperation.Name = "txtEmailRecuperation";
             txtEmailRecuperation.Size = new Size(204, 23);
             txtEmailRecuperation.TabIndex = 3;
             // 
             // txtNovaSenha
             // 
-            txtNovaSenha.Location = new Point(334, 134);
+            txtNovaSenha.Location = new Point(294, 259);
             txtNovaSenha.Name = "txtNovaSenha";
             txtNovaSenha.Size = new Size(204, 23);
             txtNovaSenha.TabIndex = 4;
             // 
-            // txtConfirmeSenha
-            // 
-            txtConfirmeSenha.Location = new Point(334, 176);
-            txtConfirmeSenha.Name = "txtConfirmeSenha";
-            txtConfirmeSenha.Size = new Size(204, 23);
-            txtConfirmeSenha.TabIndex = 5;
-            // 
             // btnConfirmar
             // 
-            btnConfirmar.Location = new Point(387, 215);
+            btnConfirmar.Location = new Point(338, 299);
             btnConfirmar.Name = "btnConfirmar";
             btnConfirmar.Size = new Size(105, 31);
             btnConfirmar.TabIndex = 6;
@@ -95,20 +79,30 @@
             btnConfirmar.UseVisualStyleBackColor = true;
             btnConfirmar.Click += btnConfirmar_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources._5;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(739, 564);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // FormRecuperarsenha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(739, 400);
+            ClientSize = new Size(739, 564);
             Controls.Add(btnConfirmar);
-            Controls.Add(txtConfirmeSenha);
             Controls.Add(txtNovaSenha);
             Controls.Add(txtEmailRecuperation);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Name = "FormRecuperarsenha";
             Text = "FormRecuperarsenha";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,10 +111,9 @@
 
         private Label label1;
         private Label label2;
-        private Label label3;
         private TextBox txtEmailRecuperation;
         private TextBox txtNovaSenha;
-        private TextBox txtConfirmeSenha;
         private Button btnConfirmar;
+        private PictureBox pictureBox1;
     }
 }

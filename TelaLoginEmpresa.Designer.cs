@@ -78,7 +78,7 @@
             pictureBox1.Image = Properties.Resources.grafico_login;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(564, 265);
+            pictureBox1.Size = new Size(575, 284);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -98,7 +98,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(564, 265);
+            ClientSize = new Size(575, 284);
             Controls.Add(btnLoginEmpresa);
             Controls.Add(txtSenhaEmpresa);
             Controls.Add(txtLoginEmpresa);

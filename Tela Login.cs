@@ -67,8 +67,8 @@ namespace Pro_Solution
                 if (reader.Read())
                 {
                     MessageBox.Show("Login realizado com sucesso");
-                    TelaPerguntas telaPerguntas = new TelaPerguntas();
-                    telaPerguntas.ShowDialog();
+                    TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
+                    telaColaborador.ShowDialog();
                 }
                 else
                 {

@@ -145,18 +145,18 @@ namespace Pro_Solution
 
             using (var conn = Conexao.obterConexao())
             {
-                string sql = "INSERT INTO perguntas (email,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,pergunta8,pergunta9,pergunta10) VALUES(@email,@pergunta1,@pergunta2,@pergunta3,@pergunta4,@pergunta5,@pergunta6,@pergunta7,@pergunta8,@pergunta9,@pergunta10)";
+                string sql = "INSERT INTO perguntas (email,Como_se_sente_em_relação_ao_seu_trabalho_atualmente,Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe,A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo,Você_sente_que_recebe_feedebacks_construtivos_com_frequência,Você_está_contente_com_sua_remuneração_atual,Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa,Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor,Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias,Você_sente_que_seu_trabalho_é_valorizado_pela_empresa,Sua_carga_de_trabalho_é_adequada_para_tempo_disponível) VALUES(@email,@Como_se_sente_em_relação_ao_seu_trabalho_atualmente,@Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe,@A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo,@Você_sente_que_recebe_feedebacks_construtivos_com_frequência,@Você_está_contente_com_sua_remuneração_atual,@Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa,@Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor,@Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias,@Você_sente_que_seu_trabalho_é_valorizado_pela_empresa,@Sua_carga_de_trabalho_é_adequada_para_tempo_disponível)";
                 var cmd = new MySqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@pergunta1", pergunta1);
-                cmd.Parameters.AddWithValue("@pergunta2", pergunta2);
-                cmd.Parameters.AddWithValue("@pergunta3", pergunta3);
-                cmd.Parameters.AddWithValue("@pergunta4", pergunta4);
-                cmd.Parameters.AddWithValue("@pergunta5", pergunta5);
-                cmd.Parameters.AddWithValue("@pergunta6", pergunta6);
-                cmd.Parameters.AddWithValue("@pergunta7", pergunta7);
-                cmd.Parameters.AddWithValue("@pergunta8", pergunta8);
-                cmd.Parameters.AddWithValue("@pergunta9", pergunta9);
-                cmd.Parameters.AddWithValue("@pergunta10", pergunta10);
+                cmd.Parameters.AddWithValue("@Como_se_sente_em_relação_ao_seu_trabalho_atualmente", pergunta1);
+                cmd.Parameters.AddWithValue("@Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe", pergunta2);
+                cmd.Parameters.AddWithValue("@A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo", pergunta3);
+                cmd.Parameters.AddWithValue("@Você_sente_que_recebe_feedebacks_construtivos_com_frequência", pergunta4);
+                cmd.Parameters.AddWithValue("@Você_está_contente_com_sua_remuneração_atual", pergunta5);
+                cmd.Parameters.AddWithValue("@Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa", pergunta6);
+                cmd.Parameters.AddWithValue("@Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor", pergunta7);
+                cmd.Parameters.AddWithValue("@Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias", pergunta8);
+                cmd.Parameters.AddWithValue("@Você_sente_que_seu_trabalho_é_valorizado_pela_empresa", pergunta9);
+                cmd.Parameters.AddWithValue("@Sua_carga_de_trabalho_é_adequada_para_tempo_disponível", pergunta10);
                 cmd.Parameters.AddWithValue("@email", emailpergunta);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Enviado com sucesso");

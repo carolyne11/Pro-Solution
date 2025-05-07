@@ -40,8 +40,8 @@ namespace Pro_Solution
             if (login == "Admin" && senha == "Admin123")
             {
                 MessageBox.Show("Login Realizado com sucesso");
-                TelaEmpresa telaEmpresa = new TelaEmpresa();
-                telaEmpresa.ShowDialog();
+                TelaEntrarEmpresa telaEntrarEmpresa = new TelaEntrarEmpresa();
+                telaEntrarEmpresa.ShowDialog();
 
             }
             else

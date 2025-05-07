@@ -51,6 +51,8 @@ namespace Pro_Solution
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Senha alterada com sucesso!");
+                        Form1 form1 = new Form1();
+                        form1.ShowDialog();
                     }
                     else
                     {
@@ -63,5 +65,6 @@ namespace Pro_Solution
                 }
             }
         }
+        }
     }
-}
+

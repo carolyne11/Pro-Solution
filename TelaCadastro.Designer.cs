@@ -42,7 +42,9 @@
             txtemail = new TextBox();
             txtConfirmarSenha = new TextBox();
             label6 = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -59,7 +61,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Gainsboro;
-            label2.Location = new Point(194, 164);
+            label2.Location = new Point(196, 164);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 1;
@@ -69,7 +71,7 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = Color.Gainsboro;
-            label3.Location = new Point(214, 270);
+            label3.Location = new Point(215, 270);
             label3.Name = "label3";
             label3.Size = new Size(34, 15);
             label3.TabIndex = 2;
@@ -79,7 +81,7 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.Gainsboro;
-            label5.Location = new Point(210, 313);
+            label5.Location = new Point(214, 318);
             label5.Name = "label5";
             label5.Size = new Size(39, 15);
             label5.TabIndex = 4;
@@ -87,14 +89,14 @@
             // 
             // txtNomeCadastro
             // 
-            txtNomeCadastro.Location = new Point(271, 104);
+            txtNomeCadastro.Location = new Point(301, 104);
             txtNomeCadastro.Name = "txtNomeCadastro";
             txtNomeCadastro.Size = new Size(212, 23);
             txtNomeCadastro.TabIndex = 5;
             // 
             // txtMatricula
             // 
-            txtMatricula.Location = new Point(271, 156);
+            txtMatricula.Location = new Point(301, 156);
             txtMatricula.Name = "txtMatricula";
             txtMatricula.Size = new Size(212, 23);
             txtMatricula.TabIndex = 6;
@@ -102,7 +104,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(271, 262);
+            comboBox1.Location = new Point(301, 262);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(212, 23);
             comboBox1.TabIndex = 7;
@@ -110,16 +112,17 @@
             // 
             // txtSenhaCadastro
             // 
-            txtSenhaCadastro.Location = new Point(271, 305);
+            txtSenhaCadastro.Location = new Point(301, 310);
             txtSenhaCadastro.Name = "txtSenhaCadastro";
             txtSenhaCadastro.Size = new Size(212, 23);
             txtSenhaCadastro.TabIndex = 8;
             // 
             // btnCadastrar
             // 
-            btnCadastrar.Location = new Point(330, 384);
+            btnCadastrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCadastrar.Location = new Point(357, 389);
             btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(75, 29);
+            btnCadastrar.Size = new Size(102, 33);
             btnCadastrar.TabIndex = 9;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
@@ -146,14 +149,14 @@
             // 
             // txtemail
             // 
-            txtemail.Location = new Point(271, 210);
+            txtemail.Location = new Point(301, 210);
             txtemail.Name = "txtemail";
             txtemail.Size = new Size(212, 23);
             txtemail.TabIndex = 12;
             // 
             // txtConfirmarSenha
             // 
-            txtConfirmarSenha.Location = new Point(271, 344);
+            txtConfirmarSenha.Location = new Point(301, 355);
             txtConfirmarSenha.Name = "txtConfirmarSenha";
             txtConfirmarSenha.Size = new Size(212, 23);
             txtConfirmarSenha.TabIndex = 13;
@@ -161,17 +164,27 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(169, 347);
+            label6.Location = new Point(185, 363);
             label6.Name = "label6";
             label6.Size = new Size(96, 15);
             label6.TabIndex = 14;
             label6.Text = "Confirmar Senha";
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Dock = DockStyle.Fill;
+            pictureBox2.Image = Properties.Resources._3;
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(806, 545);
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
+            // 
             // TelaCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(806, 545);
             Controls.Add(label6);
             Controls.Add(txtConfirmarSenha);
             Controls.Add(txtemail);
@@ -186,10 +199,12 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(pictureBox2);
             Name = "TelaCadastro";
             Text = "TelaCadastro";
             Load += TelaCadastro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -210,5 +225,6 @@
         private TextBox txtemail;
         private TextBox txtConfirmarSenha;
         private Label label6;
+        private PictureBox pictureBox2;
     }
 }
