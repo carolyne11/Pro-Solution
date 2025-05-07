@@ -115,7 +115,7 @@
             pictureBox1.Image = Properties.Resources.Mídia;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 448);
+            pictureBox1.Size = new Size(812, 448);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -144,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 448);
+            ClientSize = new Size(812, 448);
             Controls.Add(btnEsqueci);
             Controls.Add(btnMostarSenha);
             Controls.Add(btnEmpresaTela1);
