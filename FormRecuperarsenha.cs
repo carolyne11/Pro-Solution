@@ -34,7 +34,7 @@ namespace Pro_Solution
                 return;
             }
 
-            ChangePassword(email, newPassword);
+            ChangePassword(email, senhaHash);
         }
 
         private void ChangePassword(string email, string newPassword)
