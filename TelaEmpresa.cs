@@ -33,8 +33,38 @@ namespace Pro_Solution
                 dataGridView1.DataSource = dt;
             }
         }
-        
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string palavraParaContar = cmbPalavra.Text;
+            int contagem = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().Contains(palavraParaContar))
+                    {
+                        contagem++;
+                    }
+                }
+            }
+            MessageBox.Show($"Os colaboradores do {palavraParaContar}'preencheu {contagem} vezes a pesquisa.");
+        }
+
+        private void cmbPalavra_SelectedIndexChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void TelaEmpresa_Load(object sender, EventArgs e)
+        {
+            cmbPalavra.Items.Add("Administrativo");
+            cmbPalavra.Items.Add("Telemarketing");
         }
     }
+
+
+}
+
+
 

@@ -31,6 +31,8 @@
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             btnCarregar = new Button();
+            cmbPalavra = new ComboBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -40,7 +42,7 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(0, 112);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1150, 396);
+            dataGridView1.Size = new Size(1150, 365);
             dataGridView1.TabIndex = 0;
             // 
             // pictureBox1
@@ -57,7 +59,7 @@
             // btnCarregar
             // 
             btnCarregar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCarregar.Location = new Point(496, 551);
+            btnCarregar.Location = new Point(500, 543);
             btnCarregar.Name = "btnCarregar";
             btnCarregar.Size = new Size(160, 43);
             btnCarregar.TabIndex = 2;
@@ -65,16 +67,38 @@
             btnCarregar.UseVisualStyleBackColor = true;
             btnCarregar.Click += btnCarregar_Click;
             // 
+            // cmbPalavra
+            // 
+            cmbPalavra.FormattingEnabled = true;
+            cmbPalavra.Location = new Point(883, 501);
+            cmbPalavra.Name = "cmbPalavra";
+            cmbPalavra.Size = new Size(198, 23);
+            cmbPalavra.TabIndex = 3;
+            cmbPalavra.SelectedIndexChanged += cmbPalavra_SelectedIndexChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(941, 543);
+            button1.Name = "button1";
+            button1.Size = new Size(106, 23);
+            button1.TabIndex = 4;
+            button1.Text = "CONTAGEM";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // TelaEmpresa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1150, 634);
+            Controls.Add(button1);
+            Controls.Add(cmbPalavra);
             Controls.Add(btnCarregar);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Name = "TelaEmpresa";
             Text = "TelaEmpresa";
+            Load += TelaEmpresa_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -85,5 +109,7 @@
         private DataGridView dataGridView1;
         private PictureBox pictureBox1;
         private Button btnCarregar;
+        private ComboBox cmbPalavra;
+        private Button button1;
     }
 }
