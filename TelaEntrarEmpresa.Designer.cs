@@ -37,7 +37,7 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources._2;
+            pictureBox1.Image = Properties.Resources._51;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(800, 570);
@@ -47,7 +47,7 @@
             // textBox2
             // 
             textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(308, 170);
+            textBox2.Location = new Point(302, 265);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(168, 27);
             textBox2.TabIndex = 2;
@@ -56,7 +56,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(345, 230);
+            button2.Location = new Point(341, 312);
             button2.Name = "button2";
             button2.Size = new Size(96, 43);
             button2.TabIndex = 4;

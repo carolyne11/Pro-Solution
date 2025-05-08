@@ -41,9 +41,10 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.ButtonShadow;
-            label1.Location = new Point(135, 94);
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(209, 167);
             label1.Name = "label1";
-            label1.Size = new Size(34, 15);
+            label1.Size = new Size(40, 17);
             label1.TabIndex = 0;
             label1.Text = "login";
             label1.Click += label1_Click;
@@ -52,22 +53,23 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.ButtonShadow;
-            label2.Location = new Point(135, 141);
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(209, 226);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(45, 17);
             label2.TabIndex = 1;
             label2.Text = "Senha";
             // 
             // txtLoginEmpresa
             // 
-            txtLoginEmpresa.Location = new Point(190, 91);
+            txtLoginEmpresa.Location = new Point(277, 159);
             txtLoginEmpresa.Name = "txtLoginEmpresa";
             txtLoginEmpresa.Size = new Size(208, 23);
             txtLoginEmpresa.TabIndex = 2;
             // 
             // txtSenhaEmpresa
             // 
-            txtSenhaEmpresa.Location = new Point(190, 138);
+            txtSenhaEmpresa.Location = new Point(277, 218);
             txtSenhaEmpresa.Name = "txtSenhaEmpresa";
             txtSenhaEmpresa.Size = new Size(208, 23);
             txtSenhaEmpresa.TabIndex = 3;
@@ -75,10 +77,10 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.grafico_login;
+            pictureBox1.Image = Properties.Resources._61;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(575, 284);
+            pictureBox1.Size = new Size(757, 476);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -86,9 +88,10 @@
             // 
             // btnLoginEmpresa
             // 
-            btnLoginEmpresa.Location = new Point(249, 177);
+            btnLoginEmpresa.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLoginEmpresa.Location = new Point(348, 261);
             btnLoginEmpresa.Name = "btnLoginEmpresa";
-            btnLoginEmpresa.Size = new Size(75, 23);
+            btnLoginEmpresa.Size = new Size(80, 27);
             btnLoginEmpresa.TabIndex = 5;
             btnLoginEmpresa.Text = "Login";
             btnLoginEmpresa.UseVisualStyleBackColor = true;
@@ -98,7 +101,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(575, 284);
+            ClientSize = new Size(757, 476);
             Controls.Add(btnLoginEmpresa);
             Controls.Add(txtSenhaEmpresa);
             Controls.Add(txtLoginEmpresa);

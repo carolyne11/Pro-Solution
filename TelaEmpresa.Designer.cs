@@ -78,9 +78,10 @@
             // 
             // button1
             // 
+            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(941, 543);
             button1.Name = "button1";
-            button1.Size = new Size(106, 23);
+            button1.Size = new Size(106, 26);
             button1.TabIndex = 4;
             button1.Text = "CONTAGEM";
             button1.UseVisualStyleBackColor = true;
