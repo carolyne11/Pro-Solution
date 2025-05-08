@@ -27,5 +27,24 @@ namespace Pro_Solution
             TelaPerguntas telaPerguntas = new TelaPerguntas();
             telaPerguntas.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bntHappy_Click(object sender, EventArgs e)
+        {
+            bntHappy.Text = "😃";
+            bntHappy.Click -= bntHappy_Click;
+            MessageBox.Show("Que bom que você está feliz! 😊", "Resposta");
+        }
+
+        private void btnBad_Click(object sender, EventArgs e)
+        {
+            btnBad.Text = "😢";
+            btnBad.Click -= btnBad_Click;
+            MessageBox.Show("Sinto muito que você não esteja feliz. 😔", "Resposta");
+        }
     }
 }

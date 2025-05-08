@@ -29,8 +29,11 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
             button1 = new Button();
+            label1 = new Label();
+            bntHappy = new Button();
+            btnBad = new Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -40,38 +43,74 @@
             pictureBox1.Image = Properties.Resources._6;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(804, 566);
+            pictureBox1.Size = new Size(803, 570);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(280, 204);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(239, 27);
-            textBox1.TabIndex = 1;
-            textBox1.Text = " FORMULÁRIO DE PERGUNTAS";
-            textBox1.TextChanged += textBox1_TextChanged;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(338, 251);
+            button1.Location = new Point(30, 232);
             button1.Name = "button1";
-            button1.Size = new Size(113, 41);
+            button1.Size = new Size(110, 41);
             button1.TabIndex = 2;
             button1.Text = "ACESSAR";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(561, 199);
+            label1.Name = "label1";
+            label1.Size = new Size(218, 17);
+            label1.TabIndex = 3;
+            label1.Text = "Como Você está se sentindo hoje?";
+            // 
+            // bntHappy
+            // 
+            bntHappy.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            bntHappy.Location = new Point(561, 232);
+            bntHappy.Name = "bntHappy";
+            bntHappy.Size = new Size(82, 33);
+            bntHappy.TabIndex = 4;
+            bntHappy.Text = "😊";
+            bntHappy.UseVisualStyleBackColor = true;
+            bntHappy.Click += bntHappy_Click;
+            // 
+            // btnBad
+            // 
+            btnBad.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnBad.Location = new Point(701, 232);
+            btnBad.Name = "btnBad";
+            btnBad.Size = new Size(78, 33);
+            btnBad.TabIndex = 5;
+            btnBad.Text = "😢";
+            btnBad.UseVisualStyleBackColor = true;
+            btnBad.Click += btnBad_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 199);
+            label2.Name = "label2";
+            label2.Size = new Size(163, 17);
+            label2.TabIndex = 6;
+            label2.Text = "Formulário De Perguntas";
+            // 
             // TelaEntrarColaborador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 566);
+            ClientSize = new Size(803, 570);
+            Controls.Add(label2);
+            Controls.Add(btnBad);
+            Controls.Add(bntHappy);
+            Controls.Add(label1);
             Controls.Add(button1);
-            Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Name = "TelaEntrarColaborador";
             Text = "TelaEntrarColaborador";
@@ -83,7 +122,10 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox textBox1;
         private Button button1;
+        private Label label1;
+        private Button bntHappy;
+        private Button btnBad;
+        private Label label2;
     }
 }

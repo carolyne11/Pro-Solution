@@ -52,6 +52,7 @@
             cmbPergunta10 = new ComboBox();
             txtEmailPergunta = new TextBox();
             label11 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             // btnEnviar
             // 
             btnEnviar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEnviar.Location = new Point(646, 604);
+            btnEnviar.Location = new Point(657, 613);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(104, 33);
             btnEnviar.TabIndex = 11;
@@ -283,11 +284,23 @@
             label11.TabIndex = 33;
             label11.Text = "email";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(12, 614);
+            button1.Name = "button1";
+            button1.Size = new Size(85, 33);
+            button1.TabIndex = 34;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // TelaPerguntas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(792, 659);
+            Controls.Add(button1);
             Controls.Add(label11);
             Controls.Add(txtEmailPergunta);
             Controls.Add(cmbPergunta10);
@@ -346,5 +359,6 @@
         private ComboBox cmbPergunta10;
         private TextBox txtEmailPergunta;
         private Label label11;
+        private Button button1;
     }
 }

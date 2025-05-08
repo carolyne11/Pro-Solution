@@ -53,13 +53,19 @@ namespace Pro_Solution
 
         private void cmbPalavra_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void TelaEmpresa_Load(object sender, EventArgs e)
         {
             cmbPalavra.Items.Add("Administrativo");
             cmbPalavra.Items.Add("Telemarketing");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TelaEntrarEmpresa telaEntrar = new TelaEntrarEmpresa();
+            telaEntrar.ShowDialog();
         }
     }
 

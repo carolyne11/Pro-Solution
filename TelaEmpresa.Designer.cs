@@ -33,6 +33,7 @@
             btnCarregar = new Button();
             cmbPalavra = new ComboBox();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -87,11 +88,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 586);
+            button2.Name = "button2";
+            button2.Size = new Size(78, 36);
+            button2.TabIndex = 5;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // TelaEmpresa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1150, 634);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(cmbPalavra);
             Controls.Add(btnCarregar);
@@ -112,5 +125,6 @@
         private Button btnCarregar;
         private ComboBox cmbPalavra;
         private Button button1;
+        private Button button2;
     }
 }

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Pro_Solution
 {
-    public partial class TelaAgradecimento: Form
+    public partial class TelaAgradecimento : Form
     {
         public TelaAgradecimento()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
+            telaColaborador.ShowDialog();
         }
     }
 }

@@ -169,5 +169,11 @@ namespace Pro_Solution
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
+            telaColaborador.ShowDialog();
+        }
     }
 }
