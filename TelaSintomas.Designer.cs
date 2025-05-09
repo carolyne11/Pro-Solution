@@ -37,6 +37,7 @@
             button1 = new Button();
             lblResultado = new Label();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -121,16 +122,28 @@
             pictureBox1.Image = Properties.Resources._12;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(806, 569);
+            pictureBox1.Size = new Size(798, 570);
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 467);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 27);
+            button2.TabIndex = 9;
+            button2.Text = "Back";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // TelaSintomas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(806, 569);
+            ClientSize = new Size(798, 570);
+            Controls.Add(button2);
             Controls.Add(lblResultado);
             Controls.Add(button1);
             Controls.Add(cmbSintoma3);
@@ -159,5 +172,6 @@
         private Button button1;
         private Label lblResultado;
         private PictureBox pictureBox1;
+        private Button button2;
     }
 }
