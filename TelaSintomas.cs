@@ -27,7 +27,7 @@ namespace Pro_Solution
             string label3 = cmbSintoma3.Text;
 
             int score = 0;
-            
+
             if (cmbSintoma1.SelectedItem.ToString() == "SIM") score++;
             if (cmbSintoma2.SelectedItem.ToString() == "SIM") score++;
             if (cmbSintoma3.SelectedItem.ToString() == "SIM") score++;
@@ -36,7 +36,7 @@ namespace Pro_Solution
             else
                 lblResultado.Text = "Você provavelmente não está com ansiedade.";
         }
-        
+
 
         private void TelaSintomas_Load(object sender, EventArgs e)
         {
@@ -49,6 +49,11 @@ namespace Pro_Solution
             cmbSintoma3.Items.Add("SIM");
             cmbSintoma3.Items.Add("NÃO");
 
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -141,7 +141,7 @@ namespace Pro_Solution
             string pergunta8 = cmbPergunta8.Text;
             string pergunta9 = cmbPergunta9.Text;
             string pergunta10 = cmbPergunta10.Text;
-            string emailpergunta = txtEmailPergunta.Text;
+           
 
             using (var conn = Conexao.obterConexao())
             {
@@ -157,7 +157,6 @@ namespace Pro_Solution
                 cmd.Parameters.AddWithValue("@Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias", pergunta8);
                 cmd.Parameters.AddWithValue("@Você_sente_que_seu_trabalho_é_valorizado_pela_empresa", pergunta9);
                 cmd.Parameters.AddWithValue("@Sua_carga_de_trabalho_é_adequada_para_tempo_disponível", pergunta10);
-                cmd.Parameters.AddWithValue("@email", emailpergunta);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Enviado com sucesso");
                 TelaAgradecimento telaAgradecimento = new TelaAgradecimento();

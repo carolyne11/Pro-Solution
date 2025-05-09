@@ -50,8 +50,6 @@
             cmbPergunta8 = new ComboBox();
             cmbPergunta9 = new ComboBox();
             cmbPergunta10 = new ComboBox();
-            txtEmailPergunta = new TextBox();
-            label11 = new Label();
             button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -268,22 +266,6 @@
             cmbPergunta10.TabIndex = 31;
             cmbPergunta10.SelectedIndexChanged += cmbPergunta10_SelectedIndexChanged;
             // 
-            // txtEmailPergunta
-            // 
-            txtEmailPergunta.Location = new Point(231, 69);
-            txtEmailPergunta.Name = "txtEmailPergunta";
-            txtEmailPergunta.Size = new Size(295, 23);
-            txtEmailPergunta.TabIndex = 32;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(181, 72);
-            label11.Name = "label11";
-            label11.Size = new Size(36, 15);
-            label11.TabIndex = 33;
-            label11.Text = "email";
-            // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -301,8 +283,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(792, 659);
             Controls.Add(button1);
-            Controls.Add(label11);
-            Controls.Add(txtEmailPergunta);
             Controls.Add(cmbPergunta10);
             Controls.Add(cmbPergunta9);
             Controls.Add(cmbPergunta8);
@@ -357,8 +337,6 @@
         private ComboBox cmbPergunta8;
         private ComboBox cmbPergunta9;
         private ComboBox cmbPergunta10;
-        private TextBox txtEmailPergunta;
-        private Label label11;
         private Button button1;
     }
 }

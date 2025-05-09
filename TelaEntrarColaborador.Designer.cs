@@ -34,6 +34,8 @@
             bntHappy = new Button();
             btnBad = new Button();
             label2 = new Label();
+            label3 = new Label();
+            btnAcessarTeste = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -51,9 +53,9 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(30, 232);
+            button1.Location = new Point(30, 233);
             button1.Name = "button1";
-            button1.Size = new Size(110, 41);
+            button1.Size = new Size(86, 33);
             button1.TabIndex = 2;
             button1.Text = "ACESSAR";
             button1.UseVisualStyleBackColor = true;
@@ -72,7 +74,7 @@
             // bntHappy
             // 
             bntHappy.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            bntHappy.Location = new Point(561, 232);
+            bntHappy.Location = new Point(570, 232);
             bntHappy.Name = "bntHappy";
             bntHappy.Size = new Size(82, 33);
             bntHappy.TabIndex = 4;
@@ -101,11 +103,34 @@
             label2.TabIndex = 6;
             label2.Text = "Formulário De Perguntas";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(297, 199);
+            label3.Name = "label3";
+            label3.Size = new Size(156, 17);
+            label3.TabIndex = 7;
+            label3.Text = "Teste Avaliativo pessoal";
+            // 
+            // btnAcessarTeste
+            // 
+            btnAcessarTeste.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAcessarTeste.Location = new Point(335, 233);
+            btnAcessarTeste.Name = "btnAcessarTeste";
+            btnAcessarTeste.Size = new Size(86, 34);
+            btnAcessarTeste.TabIndex = 8;
+            btnAcessarTeste.Text = "ACESSAR";
+            btnAcessarTeste.UseVisualStyleBackColor = true;
+            btnAcessarTeste.Click += btnAcessarTeste_Click;
+            // 
             // TelaEntrarColaborador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(803, 570);
+            Controls.Add(btnAcessarTeste);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(btnBad);
             Controls.Add(bntHappy);
@@ -127,5 +152,7 @@
         private Button bntHappy;
         private Button btnBad;
         private Label label2;
+        private Label label3;
+        private Button btnAcessarTeste;
     }
 }

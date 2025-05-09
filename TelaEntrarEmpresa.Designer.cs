@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            textBox2 = new TextBox();
             button2 = new Button();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -44,33 +44,34 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // textBox2
-            // 
-            textBox2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.Location = new Point(302, 265);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(168, 27);
-            textBox2.TabIndex = 2;
-            textBox2.Text = " DADOS DE RESPOSTA";
-            // 
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(341, 312);
             button2.Name = "button2";
-            button2.Size = new Size(96, 43);
+            button2.Size = new Size(92, 38);
             button2.TabIndex = 4;
             button2.Text = "ACESSAR";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(298, 268);
+            label1.Name = "label1";
+            label1.Size = new Size(191, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Dados das respostas";
             // 
             // TelaEntrarEmpresa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 570);
+            Controls.Add(label1);
             Controls.Add(button2);
-            Controls.Add(textBox2);
             Controls.Add(pictureBox1);
             Name = "TelaEntrarEmpresa";
             Text = "TelaEntrarEmpresa";
@@ -82,7 +83,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private TextBox textBox2;
         private Button button2;
+        private Label label1;
     }
 }

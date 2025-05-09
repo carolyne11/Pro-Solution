@@ -46,5 +46,11 @@ namespace Pro_Solution
             btnBad.Click -= btnBad_Click;
             MessageBox.Show("Sinto muito que você não esteja feliz. 😔", "Resposta");
         }
+
+        private void btnAcessarTeste_Click(object sender, EventArgs e)
+        {
+            TelaSintomas telaSintomas = new TelaSintomas();
+            telaSintomas.ShowDialog();
+        }
     }
 }
