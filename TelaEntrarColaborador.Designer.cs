@@ -45,7 +45,7 @@
             pictureBox1.Image = Properties.Resources._6;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(803, 570);
+            pictureBox1.Size = new Size(803, 577);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -128,7 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(803, 570);
+            ClientSize = new Size(803, 577);
             Controls.Add(btnAcessarTeste);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -139,6 +139,7 @@
             Controls.Add(pictureBox1);
             Name = "TelaEntrarColaborador";
             Text = "TelaEntrarColaborador";
+            Load += TelaEntrarColaborador_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

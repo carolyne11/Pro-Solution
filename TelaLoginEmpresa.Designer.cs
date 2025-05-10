@@ -34,6 +34,7 @@
             txtSenhaEmpresa = new TextBox();
             pictureBox1 = new PictureBox();
             btnLoginEmpresa = new Button();
+            btnMostrarSenhaEmpresa = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -97,11 +98,22 @@
             btnLoginEmpresa.UseVisualStyleBackColor = true;
             btnLoginEmpresa.Click += btnLoginEmpresa_Click;
             // 
+            // btnMostrarSenhaEmpresa
+            // 
+            btnMostrarSenhaEmpresa.Location = new Point(584, 191);
+            btnMostrarSenhaEmpresa.Name = "btnMostrarSenhaEmpresa";
+            btnMostrarSenhaEmpresa.Size = new Size(98, 23);
+            btnMostrarSenhaEmpresa.TabIndex = 6;
+            btnMostrarSenhaEmpresa.Text = "Mostrar Senha";
+            btnMostrarSenhaEmpresa.UseVisualStyleBackColor = true;
+            btnMostrarSenhaEmpresa.Click += btnMostrarSenhaEmpresa_Click;
+            // 
             // TelaLoginEmpresa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(757, 476);
+            Controls.Add(btnMostrarSenhaEmpresa);
             Controls.Add(btnLoginEmpresa);
             Controls.Add(txtSenhaEmpresa);
             Controls.Add(txtLoginEmpresa);
@@ -124,5 +136,6 @@
         private TextBox txtSenhaEmpresa;
         private PictureBox pictureBox1;
         private Button btnLoginEmpresa;
+        private Button btnMostrarSenhaEmpresa;
     }
 }

@@ -46,7 +46,7 @@ namespace Pro_Solution
                     conn.Open();
                     string query = "UPDATE usuario SET senha = @senha WHERE email = @email";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@senha", newPassword); 
+                    cmd.Parameters.AddWithValue("@senha", newPassword);
                     cmd.Parameters.AddWithValue("@email", email);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
@@ -55,6 +55,7 @@ namespace Pro_Solution
                         MessageBox.Show("Senha alterada com sucesso!");
                         Form1 form1 = new Form1();
                         form1.ShowDialog();
+                        this.Close();
                     }
                     else
                     {
@@ -67,6 +68,11 @@ namespace Pro_Solution
                 }
             }
         }
+
+        private void FormRecuperarsenha_Load(object sender, EventArgs e)
+        {
+
         }
     }
+}
 

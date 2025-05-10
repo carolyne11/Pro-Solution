@@ -12,7 +12,9 @@ namespace Pro_Solution
 {
     public partial class TelaLoginEmpresa : Form
     {
+        private bool senhaVisivel = false;
         public TelaLoginEmpresa()
+
         {
             InitializeComponent();
         }
@@ -42,11 +44,28 @@ namespace Pro_Solution
                 MessageBox.Show("Login Realizado com sucesso");
                 TelaEntrarEmpresa telaEntrarEmpresa = new TelaEntrarEmpresa();
                 telaEntrarEmpresa.ShowDialog();
+                this.Close();
 
             }
             else
             {
                 MessageBox.Show("Login Incorreto");
+            }
+        }
+
+        private void btnMostrarSenhaEmpresa_Click(object sender, EventArgs e)
+        {
+            if (senhaVisivel)
+            {
+                txtSenhaEmpresa.PasswordChar = '*';
+                btnMostrarSenhaEmpresa.Text = "Mostrar";
+                senhaVisivel = false;
+            }
+            else
+            {
+                txtSenhaEmpresa.PasswordChar = '\0';
+                btnMostrarSenhaEmpresa.Text = "Esconder";
+                senhaVisivel = true;
             }
         }
     }

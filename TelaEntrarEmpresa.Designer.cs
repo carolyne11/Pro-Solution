@@ -75,6 +75,7 @@
             Controls.Add(pictureBox1);
             Name = "TelaEntrarEmpresa";
             Text = "TelaEntrarEmpresa";
+            Load += TelaEntrarEmpresa_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

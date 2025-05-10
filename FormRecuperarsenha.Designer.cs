@@ -105,6 +105,7 @@
             Controls.Add(pictureBox1);
             Name = "FormRecuperarsenha";
             Text = "FormRecuperarsenha";
+            Load += FormRecuperarsenha_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

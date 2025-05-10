@@ -21,6 +21,12 @@ namespace Pro_Solution
         {
             TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
             telaColaborador.ShowDialog();
+            this.Close();
+        }
+
+        private void TelaAgradecimento_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

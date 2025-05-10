@@ -51,6 +51,8 @@
             cmbPergunta9 = new ComboBox();
             cmbPergunta10 = new ComboBox();
             button1 = new Button();
+            txtEmailPerguntas = new TextBox();
+            txtEmail = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -277,11 +279,29 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // txtEmailPerguntas
+            // 
+            txtEmailPerguntas.Location = new Point(199, 67);
+            txtEmailPerguntas.Name = "txtEmailPerguntas";
+            txtEmailPerguntas.Size = new Size(330, 23);
+            txtEmailPerguntas.TabIndex = 35;
+            // 
+            // txtEmail
+            // 
+            txtEmail.AutoSize = true;
+            txtEmail.Location = new Point(149, 70);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(36, 15);
+            txtEmail.TabIndex = 36;
+            txtEmail.Text = "Email";
+            // 
             // TelaPerguntas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(792, 659);
+            Controls.Add(txtEmail);
+            Controls.Add(txtEmailPerguntas);
             Controls.Add(button1);
             Controls.Add(cmbPergunta10);
             Controls.Add(cmbPergunta9);
@@ -338,5 +358,7 @@
         private ComboBox cmbPergunta9;
         private ComboBox cmbPergunta10;
         private Button button1;
+        private TextBox txtEmailPerguntas;
+        private Label txtEmail;
     }
 }

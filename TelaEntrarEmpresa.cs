@@ -21,6 +21,12 @@ namespace Pro_Solution
         {
             TelaEmpresa telaEmpresa = new TelaEmpresa();
             telaEmpresa.ShowDialog();
+            this.Close();
+        }
+
+        private void TelaEntrarEmpresa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

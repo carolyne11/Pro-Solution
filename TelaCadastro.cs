@@ -59,6 +59,7 @@ namespace Pro_Solution
                     MessageBox.Show("Usuario cadastrado com sucesso");
                     Form1 form1 = new Form1();
                     form1.ShowDialog();
+                    this.Close();
 
                 }
                 catch (MySqlException ex)
