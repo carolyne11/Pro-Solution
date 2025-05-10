@@ -74,6 +74,7 @@
             Controls.Add(button2);
             Controls.Add(pictureBox1);
             Name = "TelaEntrarEmpresa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaEntrarEmpresa";
             Load += TelaEntrarEmpresa_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

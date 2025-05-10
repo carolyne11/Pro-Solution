@@ -121,6 +121,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "TelaLoginEmpresa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaLoginEmpresa";
             Load += TelaLoginEmpresa_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

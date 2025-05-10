@@ -154,6 +154,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "TelaSintomas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaSintomas";
             Load += TelaSintomas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

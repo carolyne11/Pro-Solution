@@ -62,6 +62,7 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "TelaAgradecimento";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaAgradecimento";
             Load += TelaAgradecimento_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

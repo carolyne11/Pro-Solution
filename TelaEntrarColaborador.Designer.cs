@@ -138,6 +138,7 @@
             Controls.Add(button1);
             Controls.Add(pictureBox1);
             Name = "TelaEntrarColaborador";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaEntrarColaborador";
             Load += TelaEntrarColaborador_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

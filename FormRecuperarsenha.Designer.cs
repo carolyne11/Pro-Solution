@@ -104,6 +104,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "FormRecuperarsenha";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormRecuperarsenha";
             Load += FormRecuperarsenha_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

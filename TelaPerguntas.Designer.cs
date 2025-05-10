@@ -326,6 +326,7 @@
             Controls.Add(btnEnviar);
             Controls.Add(pictureBox1);
             Name = "TelaPerguntas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaPerguntas";
             Load += TelaPerguntas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

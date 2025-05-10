@@ -207,6 +207,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Name = "TelaCadastro";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaCadastro";
             Load += TelaCadastro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

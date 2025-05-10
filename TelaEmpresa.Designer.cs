@@ -112,6 +112,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Name = "TelaEmpresa";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaEmpresa";
             Load += TelaEmpresa_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
