@@ -148,47 +148,72 @@ namespace Pro_Solution
             string pergunta10 = cmbPergunta10.Text;
             string email = txtEmailPerguntas.Text;
 
-            MessageBox.Show("Email: " + email); 
+            MessageBox.Show("Email: " + email);
 
             using (var conn = Conexao.obterConexao())
             {
 
+                //string query = "SELECT COUNT(*) FROM perguntas WHERE email = @email";
+                //var cmd = new MySqlCommand(query, conn);
+                //cmd.Parameters.AddWithValue("@email", email);
+                //int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+
+
                 string query = "SELECT COUNT(*) FROM perguntas WHERE email = @email";
-                var cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@email", email);
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-                if (count == 0)
+                using (var cmd = new MySqlCommand(query, conn))
                 {
-                    string sql = "INSERT INTO perguntas (email,Como_se_sente_em_relação_ao_seu_trabalho_atualmente,Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe,A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo,Você_sente_que_recebe_feedebacks_construtivos_com_frequência,Você_está_contente_com_sua_remuneração_atual,Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa,Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor,Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias,Você_sente_que_seu_trabalho_é_valorizado_pela_empresa,Sua_carga_de_trabalho_é_adequada_para_tempo_disponível) VALUES(@email,@Como_se_sente_em_relação_ao_seu_trabalho_atualmente,@Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe,@A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo,@Você_sente_que_recebe_feedebacks_construtivos_com_frequência,@Você_está_contente_com_sua_remuneração_atual,@Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa,@Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor,@Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias,@Você_sente_que_seu_trabalho_é_valorizado_pela_empresa,@Sua_carga_de_trabalho_é_adequada_para_tempo_disponível)";
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Como_se_sente_em_relação_ao_seu_trabalho_atualmente", pergunta1);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe", pergunta2);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo", pergunta3);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_sente_que_recebe_feedebacks_construtivos_com_frequência", pergunta4);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_está_contente_com_sua_remuneração_atual", pergunta5);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa", pergunta6);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor", pergunta7);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias", pergunta8);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Você_sente_que_seu_trabalho_é_valorizado_pela_empresa", pergunta9);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@Sua_carga_de_trabalho_é_adequada_para_tempo_disponível", pergunta10);
-                    new MySqlCommand(sql, conn).Parameters.AddWithValue("@email", email);
-                    new MySqlCommand(sql, conn).ExecuteNonQuery();
-                    MessageBox.Show("Enviado com sucesso");
-                    TelaAgradecimento telaAgradecimento = new TelaAgradecimento();
+                    cmd.Parameters.AddWithValue("@email", email);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-                    telaAgradecimento.ShowDialog();
 
-                }
-                else
-                {
-                    MessageBox.Show("Você já respondeu a pesquisa");
-                }
+                    MessageBox.Show("Total registros com este e-mail: " + count.ToString());
+
+                    if (count >= 1)
+                    {
+                        MessageBox.Show("Você já respondeu a pesquisa");
+                    }
+                    else
+                    {
+
+                        string sql = "INSERT INTO perguntas (email, Como_se_sente_em_relação_ao_seu_trabalho_atualmente," +
+                         "Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe, A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo," +
+                         "Você_sente_que_recebe_feedebacks_construtivos_com_frequência, Você_está_contente_com_sua_remuneração_atual," +
+                         "Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa, Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor," +
+                         "Você_se_sente_motivado_para_vir_trabalhar_todos_os_dias, Você_sente_que_seu_trabalho_é_valorizado_pela_empresa," +
+                         "Sua_carga_de_trabalho_é_adequada_para_tempo_disponível) VALUES (" +
+                         "@email, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10)";
+
+                        using (var cmd1 = new MySqlCommand(sql, conn))
+                        {
+                            cmd1.Parameters.AddWithValue("@email", email);
+                            cmd1.Parameters.AddWithValue("@p1", pergunta1);
+                            cmd1.Parameters.AddWithValue("@p2", pergunta2);
+                            cmd1.Parameters.AddWithValue("@p3", pergunta3);
+                            cmd1.Parameters.AddWithValue("@p4", pergunta4);
+                            cmd1.Parameters.AddWithValue("@p5", pergunta5);
+                            cmd1.Parameters.AddWithValue("@p6", pergunta6);
+                            cmd1.Parameters.AddWithValue("@p7", pergunta7);
+                            cmd1.Parameters.AddWithValue("@p8", pergunta8);
+                            cmd1.Parameters.AddWithValue("@p9", pergunta9);
+                            cmd1.Parameters.AddWithValue("@p10", pergunta10);
+
+                            cmd1.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Enviado com sucesso");
+                        TelaAgradecimento telaAgradecimento = new TelaAgradecimento();
+                        telaAgradecimento.ShowDialog();
+
+                    }
+                }             
 
             }
         }
 
 
         private void button1_Click(object sender, EventArgs e)
-       {
+        {
             TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
             telaColaborador.ShowDialog();
 
