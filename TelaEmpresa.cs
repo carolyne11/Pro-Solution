@@ -68,7 +68,7 @@ namespace Pro_Solution
         private void TelaEmpresa_Load(object sender, EventArgs e)
         {
             cmbPalavra.Items.Add("Administrativo");
-            cmbPalavra.Items.Add("Telemarketing");
+            cmbPalavra.Items.Add("Tele Marketing");
         }
 
         private void button2_Click(object sender, EventArgs e)
