@@ -34,6 +34,7 @@
             cmbPalavra = new ComboBox();
             button1 = new Button();
             button2 = new Button();
+            btnResetar = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -61,7 +62,7 @@
             // btnCarregar
             // 
             btnCarregar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCarregar.Location = new Point(500, 543);
+            btnCarregar.Location = new Point(477, 579);
             btnCarregar.Name = "btnCarregar";
             btnCarregar.Size = new Size(160, 43);
             btnCarregar.TabIndex = 2;
@@ -72,7 +73,7 @@
             // cmbPalavra
             // 
             cmbPalavra.FormattingEnabled = true;
-            cmbPalavra.Location = new Point(883, 501);
+            cmbPalavra.Location = new Point(952, 497);
             cmbPalavra.Name = "cmbPalavra";
             cmbPalavra.Size = new Size(198, 23);
             cmbPalavra.TabIndex = 3;
@@ -81,7 +82,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(941, 543);
+            button1.Location = new Point(1010, 535);
             button1.Name = "button1";
             button1.Size = new Size(106, 26);
             button1.TabIndex = 4;
@@ -92,7 +93,7 @@
             // button2
             // 
             button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(12, 586);
+            button2.Location = new Point(0, 598);
             button2.Name = "button2";
             button2.Size = new Size(78, 36);
             button2.TabIndex = 5;
@@ -100,11 +101,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // btnResetar
+            // 
+            btnResetar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetar.Location = new Point(0, 491);
+            btnResetar.Name = "btnResetar";
+            btnResetar.Size = new Size(186, 33);
+            btnResetar.TabIndex = 6;
+            btnResetar.Text = "Resetar Respostas";
+            btnResetar.UseVisualStyleBackColor = true;
+            btnResetar.Click += btnResetar_Click;
+            // 
             // TelaEmpresa
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1150, 634);
+            Controls.Add(btnResetar);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(cmbPalavra);
@@ -128,5 +141,6 @@
         private ComboBox cmbPalavra;
         private Button button1;
         private Button button2;
+        private Button btnResetar;
     }
 }

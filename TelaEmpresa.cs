@@ -1,5 +1,6 @@
 ﻿using Microsoft.Win32.SafeHandles;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -37,8 +38,8 @@ namespace Pro_Solution
                 DataTable dataTable = new DataTable();
                 mySqlDataAdapter.Fill(dataTable);
                 dataGridView1.DataSource = dataTable;
-              
-                
+
+
 
             }
         }
@@ -82,10 +83,23 @@ namespace Pro_Solution
         {
 
         }
+
+        private void btnResetar_Click(object sender, EventArgs e)
+        {
+            using var conn = Conexao.obterConexao();
+            {
+                string sql = "DELETE FROM perguntas";
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Respostas resetadas com sucesso!");
+            }
+        }
+              
+        }
     }
 
 
-}
+
 
 
 
