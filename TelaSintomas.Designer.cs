@@ -38,6 +38,8 @@
             lblResultado = new Label();
             pictureBox1 = new PictureBox();
             button2 = new Button();
+            txtEmail = new TextBox();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,11 +47,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(241, 112);
+            label1.Location = new Point(241, 129);
             label1.Name = "label1";
             label1.Size = new Size(271, 17);
             label1.TabIndex = 0;
             label1.Text = "Você se sente nervoso(a) frequentemente?";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -74,7 +77,7 @@
             // cmbSintoma1
             // 
             cmbSintoma1.FormattingEnabled = true;
-            cmbSintoma1.Location = new Point(284, 164);
+            cmbSintoma1.Location = new Point(284, 172);
             cmbSintoma1.Name = "cmbSintoma1";
             cmbSintoma1.Size = new Size(152, 23);
             cmbSintoma1.TabIndex = 3;
@@ -110,7 +113,7 @@
             // 
             lblResultado.AutoSize = true;
             lblResultado.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblResultado.Location = new Point(311, 407);
+            lblResultado.Location = new Point(295, 408);
             lblResultado.Name = "lblResultado";
             lblResultado.Size = new Size(21, 20);
             lblResultado.TabIndex = 7;
@@ -138,11 +141,29 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(284, 80);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(160, 23);
+            txtEmail.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(227, 83);
+            label4.Name = "label4";
+            label4.Size = new Size(36, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Email";
+            // 
             // TelaSintomas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(798, 570);
+            Controls.Add(label4);
+            Controls.Add(txtEmail);
             Controls.Add(button2);
             Controls.Add(lblResultado);
             Controls.Add(button1);
@@ -174,5 +195,7 @@
         private Label lblResultado;
         private PictureBox pictureBox1;
         private Button button2;
+        private TextBox txtEmail;
+        private Label label4;
     }
 }

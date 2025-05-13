@@ -1,4 +1,5 @@
-﻿using MySqlX.XDevAPI.Relational;
+﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using Org.BouncyCastle.Asn1;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace Pro_Solution
             string label1 = cmbSintoma1.Text;
             string label2 = cmbSintoma2.Text;
             string label3 = cmbSintoma3.Text;
+            string email = txtEmail.Text;
 
             int score = 0;
 
@@ -35,7 +37,43 @@ namespace Pro_Solution
                 lblResultado.Text = "Você pode estar com ansiedade.";
             else
                 lblResultado.Text = "Você provavelmente não está com ansiedade.";
+
+            using (var conn = Conexao.obterConexao())
+            {
+
+                string query = "SELECT COUNT(*) FROM avaliacao WHERE email = @email";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@email", email);
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+                    if (count >= 1)
+                    {
+                        MessageBox.Show("Você já respondeu a pesquisa");
+                    }
+                    else
+                    {
+
+                        string sql = "INSERT INTO avaliacao (email,Você_se_sente_nervoso_frequentemente,Você_tem_dificuldade_para_relaxar,Você_se_sente_sobrecarregado_com_frequência) VALUES(@email,@Você_se_sente_nervoso_frequentemente,@Você_tem_dificuldade_para_relaxar,@Você_se_sente_sobrecarregado_com_frequência)";
+
+                        using (var cmd1 = new MySqlCommand(sql, conn))
+                        {
+                            cmd1.Parameters.AddWithValue("@email", email);
+                            cmd1.Parameters.AddWithValue("@Você_se_sente_nervoso_frequentemente", label1);
+                            cmd1.Parameters.AddWithValue("@Você_tem_dificuldade_para_relaxar", label2);
+                            cmd1.Parameters.AddWithValue("@Você_se_sente_sobrecarregado_com_frequência", label3);
+                            cmd1.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Enviado com sucesso");
+                        TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
+                        telaColaborador.ShowDialog();
+
+                    }
+                }
+            }
         }
+
 
 
         private void TelaSintomas_Load(object sender, EventArgs e)
@@ -62,6 +100,11 @@ namespace Pro_Solution
             TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
             telaColaborador.ShowDialog();
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

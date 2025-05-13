@@ -73,7 +73,7 @@
             // cmbPalavra
             // 
             cmbPalavra.FormattingEnabled = true;
-            cmbPalavra.Location = new Point(952, 497);
+            cmbPalavra.Location = new Point(940, 498);
             cmbPalavra.Name = "cmbPalavra";
             cmbPalavra.Size = new Size(198, 23);
             cmbPalavra.TabIndex = 3;
@@ -82,7 +82,7 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(1010, 535);
+            button1.Location = new Point(998, 536);
             button1.Name = "button1";
             button1.Size = new Size(106, 26);
             button1.TabIndex = 4;
@@ -104,7 +104,7 @@
             // btnResetar
             // 
             btnResetar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResetar.Location = new Point(0, 491);
+            btnResetar.Location = new Point(0, 498);
             btnResetar.Name = "btnResetar";
             btnResetar.Size = new Size(186, 33);
             btnResetar.TabIndex = 6;
