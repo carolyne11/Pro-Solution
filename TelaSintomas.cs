@@ -41,7 +41,7 @@ namespace Pro_Solution
             using (var conn = Conexao.obterConexao())
             {
 
-                string query = "SELECT COUNT(*) FROM avaliacao WHERE email = @email";
+                string query = "SELECT COUNT(*) FROM avaliacao_resposta WHERE email = @email";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@email", email);
@@ -54,7 +54,7 @@ namespace Pro_Solution
                     else
                     {
 
-                        string sql = "INSERT INTO avaliacao (email,Você_se_sente_nervoso_frequentemente,Você_tem_dificuldade_para_relaxar,Você_se_sente_sobrecarregado_com_frequência) VALUES(@email,@Você_se_sente_nervoso_frequentemente,@Você_tem_dificuldade_para_relaxar,@Você_se_sente_sobrecarregado_com_frequência)";
+                        string sql = "INSERT INTO avaliacao_resposta (email,Você_se_sente_nervoso_frequentemente,Você_tem_dificuldade_para_relaxar,Você_se_sente_sobrecarregado_com_frequência) VALUES(@email,@Você_se_sente_nervoso_frequentemente,@Você_tem_dificuldade_para_relaxar,@Você_se_sente_sobrecarregado_com_frequência)";
 
                         using (var cmd1 = new MySqlCommand(sql, conn))
                         {

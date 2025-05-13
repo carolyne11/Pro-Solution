@@ -160,7 +160,7 @@ namespace Pro_Solution
 
 
 
-                string query = "SELECT COUNT(*) FROM perguntas WHERE email = @email";
+                string query = "SELECT COUNT(*) FROM form_respostas WHERE email = @email";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@email", email);
@@ -173,7 +173,7 @@ namespace Pro_Solution
                     else
                     {
 
-                        string sql = "INSERT INTO perguntas (email, Como_se_sente_em_relação_ao_seu_trabalho_atualmente," +
+                        string sql = "INSERT INTO form_respostas (email, Como_se_sente_em_relação_ao_seu_trabalho_atualmente," +
                          "Como_avalia_seu_relacionamento_com_os_colaboradores_de_equipe, A_liderança_da_sua_equipe_é_acessiível_e_aberto_ao_diálogo," +
                          "Você_sente_que_recebe_feedebacks_construtivos_com_frequência, Você_está_contente_com_sua_remuneração_atual," +
                          "Você_sente_que_seu_esforço_é_reconhecido_de_forma_justa, Você_se_sentiu_desconfortavél_com_algum_colega_ou_gestor," +

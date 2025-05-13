@@ -23,7 +23,7 @@ namespace Pro_Solution
             using (var conn = Conexao.obterConexao())
             {
 
-                string sql = "SELECT usuario.nome,usuario.setor,avaliacao.Você_se_sente_nervoso_frequentemente,avaliacao.Você_tem_dificuldade_para_relaxar,avaliacao.Você_se_sente_sobrecarregado_com_frequência from usuario INNER JOIN avaliacao ON usuario.email=avaliacao.email;";
+                string sql = "SELECT usuario.nome,usuario.setor,avaliacao_resposta.Você_se_sente_nervoso_frequentemente,avaliacao_resposta.Você_tem_dificuldade_para_relaxar,avaliacao_resposta.Você_se_sente_sobrecarregado_com_frequência from usuario INNER JOIN avaliacao_resposta ON usuario.email=avaliacao_resposta.email;";
                 //MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, conn);
                 //DataTable dt = new DataTable();
                 //dataAdapter.Fill(dt);
