@@ -66,8 +66,7 @@ namespace Pro_Solution
                         }
 
                         MessageBox.Show("Enviado com sucesso");
-                        TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
-                        telaColaborador.ShowDialog();
+                        
 
                     }
                 }

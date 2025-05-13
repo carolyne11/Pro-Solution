@@ -73,6 +73,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Name = "TelaEmpresaAvaliacao";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "TelaEmpresaAvaliacao";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
