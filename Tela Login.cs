@@ -67,6 +67,7 @@ namespace Pro_Solution
                 if (reader.Read())
                 {
                     MessageBox.Show("Login realizado com sucesso");
+                    MessageBox.Show($"Bem vindo {email}");
                     TelaEntrarColaborador telaColaborador = new TelaEntrarColaborador();
                     telaColaborador.ShowDialog();
                 }
