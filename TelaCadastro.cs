@@ -67,7 +67,7 @@ namespace Pro_Solution
                     if (ex.Number == 1062)
                     {
                         MessageBox.Show("Email ja cadastrado");
-                       
+
                     }
                     else
                     {
@@ -76,6 +76,12 @@ namespace Pro_Solution
 
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
         }
     }
 }

@@ -43,6 +43,7 @@
             txtConfirmarSenha = new TextBox();
             label6 = new Label();
             pictureBox2 = new PictureBox();
+            btnBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -186,11 +187,23 @@
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
             // 
+            // btnBack
+            // 
+            btnBack.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.Location = new Point(0, 501);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 32);
+            btnBack.TabIndex = 16;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // TelaCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(806, 545);
+            Controls.Add(btnBack);
             Controls.Add(label6);
             Controls.Add(txtConfirmarSenha);
             Controls.Add(txtemail);
@@ -233,5 +246,6 @@
         private TextBox txtConfirmarSenha;
         private Label label6;
         private PictureBox pictureBox2;
+        private Button btnBack;
     }
 }

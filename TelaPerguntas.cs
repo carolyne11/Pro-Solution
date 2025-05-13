@@ -166,9 +166,6 @@ namespace Pro_Solution
                     cmd.Parameters.AddWithValue("@email", email);
                     int count = Convert.ToInt32(cmd.ExecuteScalar());
 
-
-                    MessageBox.Show("Total registros com este e-mail: " + count.ToString());
-
                     if (count >= 1)
                     {
                         MessageBox.Show("Você já respondeu a pesquisa");
